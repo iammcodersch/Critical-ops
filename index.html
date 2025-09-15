@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js FPS Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <!-- UI -->
+  <div id="ui">
+    <div id="startScreen">
+      <h2>FPS Game</h2>
+      <div>
+        <b>Game Mode:</b><br>
+        <select id="gameModeSelect">
+          <option value="classic">Classic</option>
+          <option value="survival">Survival</option>
+          <option value="time">Time Attack</option>
+          <option value="practice">Practice</option>
+        </select>
+      </div>
+      <div>
+        <b>Theme:</b><br>
+        <select id="skinSelect">
+          <option value="default">Default</option>
+          <option value="neon">Neon</option>
+          <option value="desert">Desert</option>
+        </select>
+      </div>
+      <button id="startBtn">Start Game</button>
+      <div id="instructions">
+        <b>Controls:</b><br>
+        - Move: WASD or joystick<br>
+        - Look: Mouse drag or swipe right<br>
+        - Shoot: Click or tap "Shoot"<br>
+      </div>
+    </div>
+    <div id="hud" style="display:none;">
+      <div id="modeHud"></div>
+      <div id="healthHud"></div>
+      <div id="ammoHud"></div>
+      <div id="scoreHud"></div>
+      <div id="timerHud"></div>
+    </div>
+    <div id="gameover" style="display:none;">
+      <h2 id="gameoverText"></h2>
+      <button id="restartBtn">Restart</button>
+      <button id="menuBtn">Menu</button>
+      <div id="finalStats"></div>
+    </div>
+  </div>
+  <div id="joystick"></div>
+  <button id="shootBtn">Shoot</button>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
