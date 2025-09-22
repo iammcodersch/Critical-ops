@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64" id="task-view">
+  <!-- Left side boxes -->
+  <rect width="40" height="24" x="1" y="4" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"></rect>
+  <rect width="40" height="24" x="1" y="36" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"></rect>
+
+  <!-- Right side line with a small box positioned below -->
+  <!-- Longer line above the box -->
+  <line x1="80" x2="80" y1="2" y2="24" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"></line>
+  <!-- Longer line below the box -->
+  <line x1="80" x2="80" y1="38" y2="62" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"></line>
+  
+  <!-- Smaller box positioned below the center on the right side -->
+  <rect width="30" height="18" x="65" y="24" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"></rect>
+</svg>
